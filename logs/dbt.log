@@ -1,0 +1,191 @@
+[0m20:49:29.793566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4497DA4C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E44BBCB2E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E44BBCB820>]}
+
+
+============================== 20:49:29.802067 | 96ba04d2-1094-40ba-8d4d-8b250fd72741 ==============================
+[0m20:49:29.802067 [info ] [MainThread]: Running with dbt=1.7.10
+[0m20:49:29.802567 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Chris\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:49:29.803068 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/Chris/.dbt')}
+[0m20:49:29.803568 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m20:49:55.213290 [debug] [MainThread]: Starter project path: c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\include\starter_project
+[0m20:49:55.275005 [info ] [MainThread]: 
+Your new dbt project "custom_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:49:55.275504 [info ] [MainThread]: Setting up your profile.
+[0m20:53:48.621328 [error] [MainThread]: Encountered an error:
+
+[0m20:53:48.623327 [error] [MainThread]: Traceback (most recent call last):
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\cli\main.py", line 515, in init
+    results = task.run()
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\task\init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\task\init.py", line 264, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\task\init.py", line 181, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\task\init.py", line 165, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\task\init.py", line 131, in generate_target_from_input
+    target[key] = click.prompt(
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m20:53:48.624827 [debug] [MainThread]: Command `dbt init` failed at 20:53:48.624827 after 258.85 seconds
+[0m20:53:48.625327 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4497DA4C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E44BBEB430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E44BBEB340>]}
+[0m20:53:48.625828 [debug] [MainThread]: Flushing usage events
+[0m20:53:55.333477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B51099490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B5328B2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B5328B850>]}
+
+
+============================== 20:53:55.336982 | 8c2549a3-53a8-4c7f-aa5f-8ae7b03bcb44 ==============================
+[0m20:53:55.336982 [info ] [MainThread]: Running with dbt=1.7.10
+[0m20:53:55.337481 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Chris\\.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m20:54:10.633469 [debug] [MainThread]: Starter project path: c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\include\starter_project
+[0m20:54:10.663473 [info ] [MainThread]: 
+Your new dbt project "custom_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:54:10.664472 [info ] [MainThread]: Setting up your profile.
+[0m20:56:54.741057 [error] [MainThread]: Encountered an error:
+
+[0m20:56:54.743054 [error] [MainThread]: Traceback (most recent call last):
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\cli\main.py", line 515, in init
+    results = task.run()
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\task\init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\task\init.py", line 264, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\task\init.py", line 181, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\task\init.py", line 165, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\task\init.py", line 131, in generate_target_from_input
+    target[key] = click.prompt(
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m20:56:54.744556 [debug] [MainThread]: Command `dbt init` failed at 20:56:54.744556 after 179.43 seconds
+[0m20:56:54.745056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B51099490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B532AB400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019B532AB220>]}
+[0m20:56:54.745556 [debug] [MainThread]: Flushing usage events
+[0m20:57:00.318115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001992059A460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001992294B250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001992294B910>]}
+
+
+============================== 20:57:00.322615 | 4d848997-6f57-46e6-9de1-eaa000d81f57 ==============================
+[0m20:57:00.322615 [info ] [MainThread]: Running with dbt=1.7.10
+[0m20:57:00.323614 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Chris\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m20:57:12.106509 [debug] [MainThread]: Starter project path: c:\users\chris\demo\getting-started-app\elt\dbt-env\lib\site-packages\dbt\include\starter_project
+[0m20:57:12.127508 [info ] [MainThread]: 
+Your new dbt project "custom_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:57:12.128508 [info ] [MainThread]: Setting up your profile.
+[0m20:57:40.228477 [info ] [MainThread]: Profile custom_postgres written to C:\Users\Chris\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:57:40.229478 [debug] [MainThread]: Command `dbt init` succeeded at 20:57:40.229478 after 39.93 seconds
+[0m20:57:40.229978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001992059A460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001991D500E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000199229933D0>]}
+[0m20:57:40.230478 [debug] [MainThread]: Flushing usage events
+[0m20:57:51.682264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8B3CDA460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8B4774730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8B5F02730>]}
+
+
+============================== 20:57:51.686288 | 152a5501-8b30-42bf-b5cb-fa6c3b498321 ==============================
+[0m20:57:51.686288 [info ] [MainThread]: Running with dbt=1.7.10
+[0m20:57:51.686788 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Chris\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:57:51.687789 [info ] [MainThread]: dbt version: 1.7.10
+[0m20:57:51.688263 [info ] [MainThread]: python version: 3.8.10
+[0m20:57:51.688765 [info ] [MainThread]: python path: c:\users\chris\demo\getting-started-app\elt\dbt-env\scripts\python.exe
+[0m20:57:51.689264 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m20:57:51.781849 [info ] [MainThread]: Using profiles dir at C:\Users\Chris\.dbt
+[0m20:57:51.782346 [info ] [MainThread]: Using profiles.yml file at C:\Users\Chris\.dbt\profiles.yml
+[0m20:57:51.782846 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Chris\demo\getting-started-app\elt\dbt_project.yml
+[0m20:57:51.784317 [info ] [MainThread]: adapter type: postgres
+[0m20:57:51.784816 [info ] [MainThread]: adapter version: 1.7.10
+[0m20:57:51.785349 [info ] [MainThread]: Configuration:
+[0m20:57:51.785817 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:57:51.786315 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m20:57:51.786844 [info ] [MainThread]: Required dependencies:
+[0m20:57:51.787347 [debug] [MainThread]: Executing "git --help"
+[0m20:57:51.822863 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:57:51.823363 [debug] [MainThread]: STDERR: "b''"
+[0m20:57:51.823896 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:57:51.824394 [info ] [MainThread]: Connection:
+[0m20:57:51.824896 [info ] [MainThread]:   host: host.docker.internal
+[0m20:57:51.825394 [info ] [MainThread]:   port: 5434
+[0m20:57:51.825894 [info ] [MainThread]:   user: postgres
+[0m20:57:51.826387 [info ] [MainThread]:   database: destination_db
+[0m20:57:51.826895 [info ] [MainThread]:   schema: public
+[0m20:57:51.827394 [info ] [MainThread]:   connect_timeout: 10
+[0m20:57:51.827895 [info ] [MainThread]:   role: None
+[0m20:57:51.828363 [info ] [MainThread]:   search_path: None
+[0m20:57:51.828893 [info ] [MainThread]:   keepalives_idle: 0
+[0m20:57:51.829897 [info ] [MainThread]:   sslmode: None
+[0m20:57:51.830393 [info ] [MainThread]:   sslcert: None
+[0m20:57:51.830894 [info ] [MainThread]:   sslkey: None
+[0m20:57:51.831394 [info ] [MainThread]:   sslrootcert: None
+[0m20:57:51.831863 [info ] [MainThread]:   application_name: dbt
+[0m20:57:51.832395 [info ] [MainThread]:   retries: 1
+[0m20:57:51.832895 [info ] [MainThread]: Registered adapter: postgres=1.7.10
+[0m20:57:51.833895 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m20:57:51.833895 [debug] [MainThread]: Using postgres connection "debug"
+[0m20:57:51.834393 [debug] [MainThread]: On debug: select 1 as id
+[0m20:57:51.834898 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:57:51.861365 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m20:57:51.862865 [debug] [MainThread]: On debug: Close
+[0m20:57:51.862865 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:57:51.863865 [info ] [MainThread]: [31m1 check failed:[0m
+[0m20:57:51.864364 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\Chris\demo\getting-started-app\elt\dbt_project.yml> not found
+
+[0m20:57:51.865364 [debug] [MainThread]: Command `dbt debug` failed at 20:57:51.865364 after 0.26 seconds
+[0m20:57:51.865864 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:57:51.866365 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8B3CDA460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8B606AA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D8B606AAC0>]}
+[0m20:57:51.866864 [debug] [MainThread]: Flushing usage events
